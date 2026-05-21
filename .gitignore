@@ -1,0 +1,25 @@
+# Данные (большие файлы — не в git)
+data/*.csv
+
+# Модели (тяжёлые бинарники)
+models/*
+!models/.gitkeep
+
+# Сабмиты — все в одну папку, в git только template
+submissions/*
+!submissions/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow локальные эксперименты
+mlruns/
+mlartifacts/
+
+# Виртуальное окружение
+.venv/
+__pycache__/
+*.pyc
+
+# Системное
+.DS_Store

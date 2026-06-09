@@ -1,12 +1,16 @@
 # Данные (большие файлы — не в git)
 data/*.csv
 notebooks/catboost_info
+catboost_info/
+predictions_target*.csv
 
 # Модели (тяжёлые бинарники)
-models/*
-!models/.gitkeep
-*.cmb
+# models/*
+# !models/.gitkeep
+# *.cmb
 *.pkl
+
+output/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -19,3 +23,5 @@ __pycache__/
 
 # Системное
 .DS_Store
+
+docker-compose.override.ymlpredictions_target*.csv

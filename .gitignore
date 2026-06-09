@@ -10,7 +10,8 @@ predictions_target*.csv
 # *.cmb
 *.pkl
 
-output/
+output/*
+!output/.gitkeep
 
 # Jupyter
 .ipynb_checkpoints/

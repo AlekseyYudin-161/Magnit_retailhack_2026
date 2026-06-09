@@ -4,4 +4,11 @@ catboost_info/
 *.ipynb
 __pycache__/
 .git/
-.venv/
+venv/
+
+*.csv
+README.md
+.gitignore
+.dockerignore
+docker-compose.yml
+output/

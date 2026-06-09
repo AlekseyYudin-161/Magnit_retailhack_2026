@@ -1,20 +1,15 @@
 # Данные (большие файлы — не в git)
 data/*.csv
+notebooks/catboost_info
 
 # Модели (тяжёлые бинарники)
 models/*
 !models/.gitkeep
-
-# Сабмиты — все в одну папку, в git только template
-submissions/*
-!submissions/.gitkeep
+*.cmb
+*.pkl
 
 # Jupyter
 .ipynb_checkpoints/
-
-# MLflow локальные эксперименты
-mlruns/
-mlartifacts/
 
 # Виртуальное окружение
 .venv/

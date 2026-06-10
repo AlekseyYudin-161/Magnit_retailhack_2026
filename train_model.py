@@ -40,7 +40,7 @@ BEST_PARAMS = dict(
     bagging_temperature=0.9656320330745594,
     loss_function="RMSE",
     random_seed=42,
-    thread_count=4,
+    thread_count=1,                             # 4 CPU ядра - машина организаторов
     early_stopping_rounds=100,
     verbose=0,
 )

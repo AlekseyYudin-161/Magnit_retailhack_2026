@@ -1,0 +1,21 @@
+services:
+
+  solution:
+    build: .
+    image: magnit-solution:latest
+    container_name: magnit-inference
+
+    volumes:
+      - ./data:/data/input:ro           # ro - read-only
+      - ./output:/data/output
+
+    environment:
+      - INPUT_PATH=/data/input/holdout.csv
+      - OUTPUT_PATH=/data/output/predictions.csv
+      
+    # Лимиты ресурсов (контракт хакатона: 4 CPU, 8 GB RAM)
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G

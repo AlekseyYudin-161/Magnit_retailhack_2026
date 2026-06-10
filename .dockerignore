@@ -5,6 +5,7 @@ catboost_info/
 __pycache__/
 .git/
 venv/
+.venv/
 
 *.csv
 README.md

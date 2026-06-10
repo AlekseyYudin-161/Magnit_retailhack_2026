@@ -6,8 +6,6 @@ predictions_target*.csv
 
 # Модели (тяжёлые бинарники)
 # models/*
-# !models/.gitkeep
-# *.cmb
 *.pkl
 
 output/*
@@ -25,4 +23,4 @@ __pycache__/
 # Системное
 .DS_Store
 
-docker-compose.override.ymlpredictions_target*.csv
+docker-compose.override.yml
